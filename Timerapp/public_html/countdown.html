@@ -7,19 +7,23 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container home-container">
-        <h1 class="home-title">Count Down</h1>
-        <p class="home-subtitle">Count down to a specific future date/time.</p>
+<div class="container home-container">
+    <h1 class="home-title">Count Down</h1>
+    <p class="home-subtitle">Count down to a specific future date/time.</p>
 
-        <input type="datetime-local" id="endTime" class="form-control mb-3" style="max-width: 300px; margin: 0 auto;">
+    <input type="text" id="timerName" class="form-control mb-3" placeholder="Enter timer name" style="max-width: 300px; margin: auto;">
+    <input type="datetime-local" id="endTime" class="form-control mb-3" style="max-width: 300px; margin: auto;">
+
+    <div>
         <button class="btn btn-danger btn-custom mb-2" id="startBtn">Start</button>
-        <button class="btn btn-outline-primary btn-custom" id="saveBtn">Save Timer</button>
-        <h3 class="mt-4" id="countdownDisplay">00:00:00</h3>
-
-        <a href="index.html" class="btn btn-secondary mt-5">Back to Home</a>
+        <button class="btn btn-warning btn-custom mb-2" id="pauseBtn">Pause</button>
+        <button class="btn btn-outline-primary btn-custom mb-2" id="saveBtn">Save Timer</button>
     </div>
 
-    <script src="countdown.js"></script>
+    <h3 class="mt-4" id="countdownDisplay">00:00:00</h3>
+    <a href="index.html" class="btn btn-secondary mt-5">Back to Home</a>
+</div>
+
+<script src="countdown.js"></script>
 </body>
 </html>
-
